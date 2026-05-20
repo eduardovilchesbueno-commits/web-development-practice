@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Limpiezas EduAL · Presupuesto sin compromiso</title>
+    <meta name="description" content="Contacta con Limpiezas EduAL y solicita tu presupuesto de limpieza en Granada y Málaga. Respuesta rápida y sin compromiso.">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/contacto.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+</head>
+<body>
+<div id="header"></div>
+
+<main>
+
+<section class="hero-contacto">
+    <div class="contacto-wrapper">
+        <h1>Contácta con nosotros</h1>
+        <p>Estamos aquí para ayudarte con cualquier duda o presupuesto.</p>
+    </div>
+</section>
+
+<section class="contacto">
+    <div class="contacto-wrapper">
+    <div class="contacto-grid">
+
+<form action="https://formspree.io/f/xeennlga" method="POST" class="contacto-form animate-fade-up">
+
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="given-name" required aria-required="true">
+    </div>
+
+    <div class="form-group">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" autocomplete="family-name" required aria-required="true">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" autocomplete="email" required aria-required="true">
+    </div>
+
+    <div class="form-group">
+        <label for="mensaje">¿En qué podemos ayudarte?</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas o cualquier duda que tengas" required aria-required="true"></textarea>
+    </div>
+
+<div class="info-rgpd">
+  <p><strong>Información básica sobre Protección de Datos</strong></p>
+  <p>Responsable: Limpiezas EduAL. Finalidad: Atender y gestionar la solicitud realizada a través del formulario de contacto. Legitimación: Consentimiento del interesado. Destinatarios: No se cederán datos a terceros, salvo obligación legal. Derechos: Acceder, rectificar y suprimir los datos, así como otros derechos indicados en la información adicional.</p>
+  <p>Puede consultar la información adicional y detallada sobre Protección de Datos en nuestra <a href="politica-privacidad.html" target="_blank" rel="noopener">política de privacidad</a>.</p>
+</div>
+
+    <div class="terminos">
+        <input type="checkbox" id="terminos" name="terminos" required aria-required="true">
+        <label for="terminos">Acepto los <a href="terminos.html" target="_blank" rel="noopener">términos y condiciones</a></label>
+    </div>
+
+<div class="marketing">
+    <input type="checkbox" id="marketing" name="marketing">
+    <label for="marketing">Deseo recibir comunicaciones comerciales y noticias</label>
+</div>
+
+    <button type="submit" class="btn-primary">Enviar formulario</button>
+</form>
+
+    <aside class="contacto-info animate-fade-up animate-delay-1">
+        <h3>Datos de contacto</h3>
+        <p><strong>Zona de servicio:</strong><br> Granada y Málaga</p>
+        <p><strong>Teléfono:</strong><br> 600 000 000</p>
+        <p><strong>Email:</strong><br> info@limpiezasedual.com</p>
+    </aside>
+
+    </div>
+  </div>
+</section>
+
+<div id="cta"></div>
+
+</main>
+
+<div id="footer"></div>
+
+<script>const PAGE = 'contacto';</script>
+<script src="JS/layout.js"></script>
+<script src="JS/animations.js"></script>
+</body>
+</html>

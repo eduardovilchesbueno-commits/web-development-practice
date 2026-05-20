@@ -1,0 +1,188 @@
+/* =====================
+   HERO CONTACTO
+===================== */
+
+.hero-contacto {
+    background-color: var(--bg-softer);
+    padding: 2rem 1rem 0;
+}
+
+.hero-contacto h1 {
+    margin: 0;
+}
+
+.hero-contacto p {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* ===========================
+   SECCIÓN DE CONTACTO
+=========================== */
+.contacto {
+  background-color: var(--bg-softer);
+  padding: 2rem 0 4rem;
+}
+
+/* ===========================
+   FORMULARIO DE CONTACTO
+=========================== */
+.contacto-form {
+  max-width: 100%;
+}
+
+/* Agrupación de campos */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Labels */
+.contacto-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* Inputs y textarea */
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+
+  background-color: #ffffff;
+  border: 1px solid #cce8dd;
+  border-radius: 6px;
+
+  color: var(--text-color);
+  font-family: inherit;
+
+  transition: border-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+/* Textarea específico */
+.contacto-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Placeholder */
+.contacto-form ::placeholder {
+  color: #94b7aa;
+  font-size: 0.95rem;
+}
+
+/* Focus */
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  outline: none;
+  border-color: var(--color-button);
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.25);
+}
+
+/*=========================
+  INFORMACIÓN RGPD 
+===========================*/
+.info-rgpd a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-button);
+  color: var(--color-button);
+}
+
+/*===========================
+  TÉRMINOS Y CONDICIONES
+=========================== */
+.terminos {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1.2rem 0 0.4rem;
+}
+
+.terminos input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--color-button);
+}
+
+.terminos label {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.terminos a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-button);
+  color: var(--color-button);
+}
+
+/*============================
+  MARKETING (OPCIONAL)
+============================*/
+.marketing {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1.2rem 0 0.4rem;
+}
+
+.marketing input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--color-button);
+}
+
+.marketing label {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/* ===========================
+   BOTÓN DE ENVÍO
+=========================== */
+
+.contacto-form button {
+  margin-top: 0.5rem;
+}
+
+/* ===========================
+   GRID CONTACTO
+=========================== */
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto {
+        padding: 1.5rem 0 3rem;
+    }
+
+    .hero-contacto {
+        padding: 1.5rem 1rem 0;
+    }
+
+    .contacto-info {
+        padding: 1.5rem;
+    }
+}

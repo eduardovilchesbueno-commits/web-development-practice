@@ -1,0 +1,482 @@
+/*========================
+  VARIABLES GLOBALES
+========================*/
+:root {
+  --color-header: #D1FAE5;
+  --color-section: #F2FBF5;
+  --color-button: #16A34A;
+  --color-cta: #A5E3C2;
+  --bg-softer: #E3F7EC;
+  --bg-soft: #C2F2D8;
+  --text-dark: #0E1B16;
+  --text-color: #555555;
+  --text-light: #7A7A7A;
+  --text-button: #ffffff;
+  --image-radius: 10px;
+  --font-main: 'Segoe UI', sans-serif;
+  --max-width: 1200px;
+  --logo-height: 86px;
+  --color-footer: #0A2E18;
+}
+
+/*========================
+  RESET BÁSICO
+========================*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*========================
+  SELECCIÓN DE TEXTO
+========================*/
+::selection {
+  background-color: var(--color-button);
+  color: var(--text-button);
+}
+
+::-moz-selection {
+  background-color: var(--color-button);
+  color: var(--text-button);
+}
+
+/*========================
+  BASE
+========================*/
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--text-light);
+  background-color: var(--color-section);
+  line-height: 1.6;
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--font-main);
+  font-size: 2.4rem;
+  text-align: center;
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 0;
+  font-family: var(--font-main);
+  font-size: 1.9rem;
+  text-align: center;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+
+h3 {
+  margin: 0;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  text-align: center;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+/*========================
+  SCROLL PROGRESS BAR
+========================*/
+.scroll-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  border: 1px solid #159849;
+  border-top: none;
+  background: transparent;
+  z-index: 9999;
+}
+
+.scroll-bar-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #159849;
+  transition: width 0.05s linear;
+}
+
+/*========================
+  HEADER
+========================*/
+.header {
+  background-color: var(--color-header);
+  color: var(--text-dark);
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  height: var(--logo-height);
+}
+
+.logo img {
+  height: var(--logo-height);
+  width: auto;
+}
+
+/*========================
+  CONTENEDOR
+========================*/
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/*========================
+  NAVEGACIÓN
+========================*/
+.nav {
+  justify-self: center;
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--color-button);
+}
+
+/*========================
+  ELEMENTOS GLOBALES
+========================*/
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--image-radius);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*========================
+  BOTONES
+========================*/
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-button);
+  color: var(--text-button);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+  transition: opacity 0.3s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/*========================
+  FOOTER
+========================*/
+.footer {
+  background-color: var(--color-footer);
+  color: var(--text-button);
+  padding: 4rem 1rem 2rem;
+}
+
+.footer .logo img {
+  height: var(--logo-height);
+  width: auto;
+  filter: brightness(1.1);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.footer h4 {
+  margin-bottom: 1rem;
+  color: var(--text-button);
+}
+
+.footer-contacto p,
+.footer a {
+  font-size: 0.9rem;
+  color: var(--text-button);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/*========================
+  CONTACTO-WRAPPER (layout compartido entre páginas)
+========================*/
+.contacto-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/*========================
+  BENEFICIOS (compartido entre páginas)
+========================*/
+.beneficios {
+  background-color: var(--bg-softer);
+  padding: 4rem 0;
+}
+
+.beneficios-titulo {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  text-align: center;
+}
+
+.beneficio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beneficio img {
+  width: 52px;
+  height: 52px;
+  padding: 10px;
+  background-color: #dff2ea;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.beneficio h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #0e1b16;
+}
+
+.beneficio p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*========================
+  CTA FINAL
+========================*/
+.cta-final {
+  background-color: var(--color-cta);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 4rem 1rem;
+  margin-bottom: 0;
+}
+
+.cta-final h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  background-color: transparent;
+}
+
+.cta-final p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+/*========================
+  LEGAL PAGES
+=========================*/
+.legal-content {
+  padding: 5rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-content p {
+  margin-top: 2rem;
+  color: var(--text-color);
+  line-height: 1.8;
+}
+
+/*========================
+  RESPONSIVE
+=========================*/
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer .logo img {
+    margin: 0 auto 1rem;
+  }
+
+  .nav ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/*========================
+  RESPONSIVE GLOBAL
+=========================*/
+@media (max-width: 768px) {
+  :root {
+    --logo-height: 60px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .logo img {
+    max-height: 60px;
+    width: auto;
+  }
+
+  .footer {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .legal-content {
+    padding: 3rem 1rem;
+  }
+}
+
+/*========================
+  MÓVIL VERTICAL (PORTRAIT)
+=========================*/
+@media (max-width: 568px) {
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0.5rem 0;
+    gap: 0.3rem;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .nav {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav ul {
+    gap: 1rem;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.6rem;
+  }
+}
+
+/*========================
+  MÓVIL HORIZONTAL (LANDSCAPE)
+=========================*/
+@media (min-width: 569px) and (max-width: 900px) {
+  :root {
+    --logo-height: 60px;
+  }
+
+  .header-content {
+    height: auto;
+    padding: 0.3rem 0;
+    align-items: center;
+  }
+
+  .nav ul {
+    gap: 0.6rem;
+  }
+
+  .nav a {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.4rem;
+  }
+
+  .logo img {
+    max-height: 60px;
+    width: auto;
+  }
+}
+
+/*========================
+  TABLET
+=========================*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .beneficios-grid,
+  .servicios-home .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

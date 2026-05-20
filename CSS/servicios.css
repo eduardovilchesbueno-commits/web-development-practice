@@ -1,0 +1,47 @@
+/* ===== HERO  ===== */
+.hero-servicios {
+  background-color: var(--bg-softer);
+  padding: 2rem 0 2rem;
+}
+
+.hero-texto {
+  max-width: 700px;
+  margin: 0.5rem auto 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  text-align: left;
+}
+
+/*=====================
+  SERVICIOS
+  ===================== */
+.servicio {
+  padding: 4rem 0;
+}
+
+.servicio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.servicio-texto ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.servicio-texto li {
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .hero-servicios {
+    padding: 1.5rem 0;
+  }
+
+  .servicio-grid {
+    grid-template-columns: 1fr;
+  }
+}

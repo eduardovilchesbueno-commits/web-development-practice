@@ -1,0 +1,63 @@
+/* =====================
+   HERO SOBRE NOSOTROS
+===================== */
+
+.hero-sobre {
+  background-color: var(--bg-softer);
+  padding: 2rem 0 2rem;
+}
+
+.hero-texto {
+  max-width: 700px;
+  margin: 0.5rem auto 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  text-align: left;
+}
+
+/* =========================
+   QUIÉNES SOMOS
+   (MISMO ESTILO QUE HOME)
+========================= */
+
+.quienes-somos {
+  background-color: var(--bg-softer);
+  padding: 4rem 0;
+}
+
+.quienes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.quienes-texto h2 {
+  margin-bottom: 1rem;
+}
+
+.quienes-texto p {
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-sobre {
+    padding: 1.5rem 0;
+  }
+
+  .quienes-somos {
+    padding: 3rem 0;
+  }
+
+  .quienes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quienes-imagen {
+    order: -1;
+  }
+}
+
+
