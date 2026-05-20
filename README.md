@@ -3,7 +3,7 @@
 This project is part of my vocational training (FCT). It focuses on improving my front-end development skills using HTML, CSS, and JavaScript.
 
 ## Features
-- Responsive layout
+- Responsive design
 - Styled components with CSS
 - Basic JavaScript interactivity
 
